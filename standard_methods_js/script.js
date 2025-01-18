@@ -1,0 +1,262 @@
+
+/*184*/
+//#1
+console.log('Результат задания 184 №1:');
+console.log (Math.pow(2,10));
+
+//#2
+console.log('Результат задания 184 №2:');
+console.log (Math.sqrt(245));
+
+//#3
+console.log('Результат задания 184 №3:');
+let arr184_3 = [4, 2, 5, 19, 13, 0, 10];
+let sum184_3 = 0;
+for(let elem184_3 of arr184_3){
+	sum184_3 = sum184_3 + Math.pow(elem184_3,3);
+}
+console.log(Math.sqrt(sum184_3));
+
+/*185*/
+
+// #1
+console.log('Результат задания 185 №1:');
+let num185_1 = Math.sqrt(379);
+console.log(Math.round(num185_1));
+console.log(num185_1.toFixed(1));
+console.log(num185_1.toFixed(2));
+
+// #2
+console.log('Результат задания 185 №2:');
+let num185_2 = Math.sqrt(587);
+let floor185_2 = Math.floor(num185_2);
+let ceil185_2 = Math.ceil(num185_2);
+console.log(floor185_2, ceil185_2);
+
+/*186*/
+
+console.log('Результат задания 186 №1:');
+console.log('Максимальное число: ' + (Math.max(4, -2, 5, 19, -130, 0, 10)));
+console.log('Минимальное число: ' + Math.min(4, -2, 5, 19, -130, 0, 10));
+
+/*task#187*/
+//#1
+console.log('Результат задания 187 №1:');
+function getRandomInt(min, max) {
+	return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+console.log(getRandomInt(1, 100));
+
+// #2
+console.log('Результат задания 187 №2:');
+let arr187_2 = [];
+for (let i = 0; i <= 9; i++){
+    arr187_2[i] = getRandomInt(55, 100);
+}
+console.log(arr187_2);
+
+/*188*/
+
+console.log('Результат задания 188 №1:');
+let a = -500;
+let b = 25;
+console.log (Math.abs(a-b));
+
+/*189*/
+
+// #1
+console.log('Результат задания 189 №1:');
+let str189_1 = 'js';
+str189_1 = str189_1.toUpperCase();
+console.log(str189_1);
+
+// #2
+console.log('Результат задания 189 №2:');
+let str189_2 = 'JS';
+str189_2 = str189_2.toLowerCase();
+console.log(str189_2);
+
+/*190*/
+console.log('Результат задания 190 №1:');
+let str = 'я учу javascript';
+let word190_1 = str.substr(2, 3); 
+let word190_2 = str.substr(6, 10);
+console.log('Метод substr: ' + (word190_1));
+console.log('Метод substr: ' + (word190_2));
+
+word190_1 = str.substring(2, 5);
+word190_2 = str.substring(6, 16);
+console.log('Метод substring: ' + (word190_1));
+console.log('Метод substring: ' + (word190_2));
+
+word190_1 = str.slice(2, 5); 
+word190_2 = str.slice(6, 16);
+console.log('Метод subslice: ' + (word190_1));
+console.log('Метод subslice: ' + (word190_2));
+
+/*191*/
+// #1
+console.log('Результат задания 191 №1:');
+let str191_1 = "file:///D:/YASYA_JS_TASKS/Стандартные методы/yasya_task_184_199_standart_methods.html";
+let res191_1 = str191_1.startsWith('https://');
+console.log(res191_1);
+
+// #2
+console.log('Результат задания 191 №2:');
+let str191_2 = "file:///D:/YASYA_JS_TASKS/Стандартные методы/yasya_task_184_199_standart_methods.html";
+let res191_2 = str191_2.endsWith('.html');
+console.log(res191_2);
+
+/*192*/
+console.log('Результат задания 192 №1:');
+let str192_1 = '1-2-3-4-5';
+while (str192_1.includes('-')) {
+	str192_1 = str192_1.replace('-', '.');
+}
+console.log(str192_1);
+
+/*193*/
+
+// #1
+console.log('Результат задания 193 №1:');
+let str193_1 = '1-2-3-4-5';
+let arr193_1 = str193_1.split('-');
+console.log(arr193_1);
+
+// #2
+console.log('Результат задания 193 №2:');
+let str193_2 = '12345'
+let arr193_2 = str193_2.split('');
+console.log(arr193_2);
+
+// #3
+console.log('Результат задания 193 №3:');
+let arr193_3= [1, 2, 3, 4, 5];
+let str193_3 = arr193_3.join('-');
+console.log(str193_3);
+
+/*194*/
+
+// #1
+console.log('Результат задания 194 №1:');
+let arr194_1 = [1, 2, 3];
+let elem = arr194_1.shift();
+console.log(elem);
+
+// #2
+console.log('Результат задания 194 №2:');
+let arr194_2 = [1, 2, 3];
+let del = arr194_2.pop();
+console.log(del);
+
+// #3
+console.log('Результат задания 194 №3:');
+let arr194_3 = [1, 2, 3];
+arr194_3.push(4, 5, 6);
+console.log(arr194_3);
+
+// #4
+console.log('Результат задания 194 №4:');
+let arr194_4 = [1, 2, 3];
+arr194_4.unshift(4, 5, 6);
+console.log(arr194_4);
+
+/*195*/
+// #1
+console.log('Результат задания 195 №1:');
+let arr195_1 = [1, 2, 3, 4, 5];
+let sub195_1 = arr195_1.slice(0, 3);
+console.log(sub195_1);
+
+// #2
+console.log('Результат задания 195 №2:');
+let arr195_2 = [1, 2, 3, 4, 5];
+let sub195_2 = arr195_2.slice(3);
+console.log(sub195_2);
+
+/*196*/
+
+// #1
+console.log('Результат задания 196 №1:');
+let arr196_1 = [1, 2, 3, 4, 5];
+arr196_1.splice(1, 2);
+console.log(arr196_1);
+
+// #2
+console.log('Результат задания 196 №2:');
+let arr196_2 = [1, 2, 3, 4, 5];
+arr196_2.splice(3, 0,'a', 'b', 'c');
+console.log(arr196_2);
+
+// #3
+console.log('Результат задания 196 №3:');
+let arr196_3 = [1, 2, 3, 4, 5];
+arr196_3.splice(2, 0, 'a', 'b');
+arr196_3.splice(6, 0, 'c');
+arr196_3.splice(8, 0, 'e');
+console.log(arr196_3);
+
+/*197*/
+console.log('Результат задания 197 №1:');
+let arr197 = [1, 2, 3, 4, 5];
+let res197 = arr197.includes(3);
+console.log(res197);
+
+/*198*/
+
+console.log('Результат задания 198 №1:');
+let obj198 = {a: 1, b: 2, c: 3};
+let keys198 = Object.keys(obj198);
+console.log(keys198);
+
+/*199*/
+
+// #1
+console.log('Результат задания 199 №1:');
+let num199_1 = 12345;
+let arr199_1 = String(num199_1).split('');
+let sum199_1 = 0;
+for (let digit199_1 of arr199_1) {
+  sum199_1 += Number(digit199_1); 
+}
+console.log(sum199_1);
+
+// #2
+console.log('Результат задания 199 №2:');
+let num199_2 = 12345;
+let arr199_2 = String(num199_2).split('');
+let sum199_2 = 0;
+for (let digit199_2 of arr199_2) {
+  sum199_2 += Number(digit199_2); 
+}
+console.log(sum199_2); 
+
+// #3
+console.log('Результат задания 199 №3:');
+let num199_3 = 12345;
+let arr199_3 = String(num199_3).split('');
+let sum199_3 = 0;
+for (let digit199_3 of arr199_3) {
+  sum199_3 += Number(digit199_3); 
+}
+console.log(sum199_3); 
+
+// #4
+console.log('Результат задания 199 №4:');
+let num199_4 = 12345;
+let arr199_4 = String(num199_4).split('');
+let sum199_4 = 0; 
+for (let digit199_4 of arr199_4) {
+  sum199_4 += Number(digit199_4); 
+}
+console.log(sum199_4); 
+
+//#5
+console.log('Результат задания 199 №5:');
+let num199_5 = 12345;
+let arr199_5 = String(num199_5).split('');
+let prod199_5 = 1; 
+for (let digit199_5 of arr199_5) {
+  prod199_5 *= Number(digit199_5); 
+}
+console.log(prod199_5);
